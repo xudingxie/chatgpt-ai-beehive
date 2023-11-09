@@ -2,12 +2,12 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ${MYSQL_USER_NAME:root}
-    password: ${MYSQL_PASSWORD:123456}
+    password: ${MYSQL_PASSWORD:ding200047}
     url: ${JDBC_URL:jdbc:mysql://localhost:3306/ai_beehive?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true}
   data:
     redis:
-      host: ${REDIS_HOST:localhost}
-      password: ${REDIS_PASSWORD:password}
+      host: ${REDIS_HOST:}
+      password: ${REDIS_PASSWORD:ding200047}
       port: ${REDIS_PORT:6379}
       connect-timeout: 1000
   servlet:
@@ -63,7 +63,7 @@ logging:
 proxy:
   enabled: true
   http-host: 127.0.0.1
-  http-port: 6666
+  http-port: 10809
 
 # 文件路径
 file-path:
